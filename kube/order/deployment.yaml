@@ -14,7 +14,7 @@ spec:
       containers:
       - name: order-service
 #        TODO fill in after your create the image
-        image:
+        image: jyono
         resources:
           requests:
             cpu: 0.1

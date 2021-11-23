@@ -14,7 +14,7 @@ spec:
       containers:
       - name: inventory-service
 #       TODO Fill in after you create an image
-        image: kchandrakant/inventory-service:v1
+        image: jyono/inventory-service:v1
         resources:
           requests:
             cpu: 0.1
