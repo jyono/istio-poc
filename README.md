@@ -25,3 +25,5 @@ run with
 dep-graph with 
 `bazel query  --notool_deps --noimplicit_deps "deps(//:ProjectRunner)" --output graph`
 
+# TODO
+Look into https://github.com/bazelbuild/examples/tree/main/java-maven to get maven deps with spring boot
