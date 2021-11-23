@@ -1,0 +1,12 @@
+
+java_binary(
+    name = "ProjectRunner",
+    srcs = ["src/main/java/com/apps/inventory/ProjectRunner.java"],
+    main_class = "com.apps.inventory.ProjectRunner",
+    deps = [":greeter"],
+)
+
+java_library(
+    name = "greeter",
+    srcs = ["src/main/java/com/libs/greeting/Greeting.java"],
+)

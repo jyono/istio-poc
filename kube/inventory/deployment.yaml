@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: inventory-service
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: inventory-service
+        version: v1
+    spec:
+      containers:
+      - name: inventory-service
+#       TODO Fill in after you create an image
+        image: kchandrakant/inventory-service:v1
+        resources:
+          requests:
+            cpu: 0.1
+            memory: 200

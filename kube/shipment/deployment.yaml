@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: shipment-service
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shipment-service
+        version: v1
+    spec:
+      containers:
+      - name: shipment-service
+#        TODO fill in after your create the image
+        image: foo
+        resources:
+          requests:
+            cpu: 0.1
+            memory: 200
